@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos de Carreras - WINGAME</title>
+    <!-- Enlaces a hojas de estilo CSS -->
+    <link rel="stylesheet" href="{% static './css/categoriacarreras.css' %}">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJf2lKkB1gG4nBq6rm3A6fkc8f7c5c5c6f4a6k5C6bA6bU6d5b6bL5u6ffx5z" crossorigin="anonymous">
+    <!-- Tipografías externas de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bebas+Neue&family=Orbitron:wght@400;700&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body class="categoria-carreras">
+
+    <!-- Encabezado principal de la página -->
+    <header>
+        <a href='{% url 'juegos' %}'" class="back" title="Volver">&#11013;</a>
+        <h1>Juegos de Carreras</h1>
+    </header>
+    
+    <!-- Botón para acceder a la página de inicio de sesión -->
+    <div class="accesos text-center">
+        <button onclick="window.location.href='{% url 'sesion' %}'">INICIAR SESIÓN</button>
+    </div>  
+    
+    <!-- Contenido principal de la página -->
+    <main>
+        <section class="game-list container py-5">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <!-- Primer juego -->
+                <div class="game-item col">
+                    <div class="card">
+                        <img src="{% static 'imagenes/Forza.jpg' %}" class="card-img-top" alt="Forza Horizon 5">
+                        <div class="card-body text-center">
+                            <p class="card-text">Forza Horizon 5</p>
+                            <a href='{% url 'forza' %}'" class="btn-ir">JUGAR AHORA</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Segundo juego -->
+                <div class="game-item col">
+                    <div class="card">
+                        <img src="{% static 'imagenes/Need.jpg' %}" class="card-img-top" alt="Need for Speed™ Most Wanted">
+                        <div class="card-body text-center">
+                            <p class="card-text">Need for Speed™ Most Wanted</p>
+                            <a href='{% url 'need' %}'" class="btn-ir">JUGAR AHORA</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="text-center py-3">
+        <p>&copy; 2025 Grupo 8 Programación Web. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gyb2G9X6zB8PpP2m88qCpFn7oWQbz8wW5TnLsHpB8sEXGQ7N8g" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0ey7J6wC4zQJkY3pztppgppf6wWq6oFG5RX1p3z5r39B5VrnEJ4mWm4q" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
