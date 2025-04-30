@@ -21,11 +21,19 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+<<<<<<< HEAD
     path('', include('vgames.urls')),  # Tu página principal
     path('', include('juegosgratis.urls')),  # Esto incluye las rutas tal cual: /juegos-gratis/ y /api/juegos-gratis/
+=======
+    path('', include('vgames.urls')),
+    
+>>>>>>> 00441e52126b7b1eb8e656eac5120910f479d158
 ]
 
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS[0])
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 00441e52126b7b1eb8e656eac5120910f479d158

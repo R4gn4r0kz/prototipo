@@ -12,9 +12,14 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 
 from pathlib import Path
 import os
+<<<<<<< HEAD
 import sys
 import oracledb
 sys.modules["cx_Oracle"] = oracledb
+=======
+import cx_Oracle
+import oracledb
+>>>>>>> 00441e52126b7b1eb8e656eac5120910f479d158
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -43,8 +48,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'vgames',
     'vgamescore',
+<<<<<<< HEAD
     'rest_framework',
     'juegosgratis',
+=======
+
+>>>>>>> 00441e52126b7b1eb8e656eac5120910f479d158
 ]
 
 MIDDLEWARE = [
@@ -80,6 +89,7 @@ WSGI_APPLICATION = 'virtualgames.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 DATABASES = {
+<<<<<<< HEAD
     'default' : {
         'ENGINE' :'django.db.backends.oracle',
         'NAME' : 'XE',
@@ -87,6 +97,13 @@ DATABASES = {
         'PASSWORD' : 'prueba_12345',
         'HOST' : 'localhost',
         'PORT' : '1521',
+=======
+    'default': {
+        'ENGINE': 'django.db.backends.oracle',
+        'NAME': cx_Oracle.makedsn('localhost', 1521, sid='orcl'),
+        'USER': 'c##vcore',
+        'PASSWORD': 'oracle',
+>>>>>>> 00441e52126b7b1eb8e656eac5120910f479d158
     }
 }
 
