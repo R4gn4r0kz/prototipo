@@ -1,0 +1,188 @@
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body y layout */
+  body {
+    background-color: #24253C;
+    color: #fcbd11;
+    font-family: 'Orbitron', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Contenedor animado (fondo) */
+  .dvd-container {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+  }
+  .dvd-logo {
+    position: absolute;
+    width: 100px;
+    top: 0; left: 0;
+  }
+  
+  /* Header */
+  .site-header {
+    font-family: 'Press Start 2P', cursive;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .site-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 40px;
+    color: #fcbd11;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    width: 100%;
+    max-width: 480px;
+    background: #24253C;
+    padding: 30px 20px;
+  }
+  
+  /* Formulario */
+  .formulario {
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px;
+    box-shadow: 0 0 20px #24253C;
+    gap: 20px;
+  }
+  .formulario h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 24px;
+    color: #fcbd11;
+    text-align: center;
+  }
+  
+  /* Grupo de campos */
+  .form-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Inputs */
+  .form-grupo input {
+    font-family: 'VT323', monospace;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 25px;
+    background: transparent;    outline: none;
+  }
+  .form-grupo input::placeholder {
+    color: #DDDDDD;
+  }
+  
+  /* Mensajes de error */
+  .error {
+    color: #ff6b6b;
+    font-size: 14px;
+  }
+  
+  /* Botones */
+  .botones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .btn {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 12px;
+    border-radius: 25px;
+    border: 2px solid #fcbd11;
+    background: transparent;
+    color: #fcbd11;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .btn:hover {
+    background-color: #fcbd11;
+    color: #24253C;
+  }
+  
+  /* Enlaces auxiliares */
+  .textos-auxiliares {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .textos-auxiliares a {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .textos-auxiliares a:hover {
+    color: #fcbd11;
+    text-decoration: underline;
+  }
+  
+  /* énfasis al wrapper del formulario */
+.form-wrapper {
+    max-width: 480px;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+    margin: 0 auto;  /* centra */
+  }
+
+  .site-header {
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .site-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.8rem;              /* usa rem para escalabilidad */
+    color: #fcbd11;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    text-shadow: 0 0 6px rgba(252,189,17,0.7);
+    margin: 0;
+  }
+  
+
+  /* Footer */
+  footer {
+    margin-top: 30px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .site-title { font-size: 28px; }
+    .formulario h2 { font-size: 22px; }
+    .form-grupo input { font-size: 16px; padding: 10px; }
+    .btn { font-size: 12px; padding: 10px; }
+  }
+  @media (max-width: 480px) {
+    .site-title { font-size: 24px; }
+    .formulario h2 { font-size: 20px; }
+    .form-grupo input { font-size: 14px; padding: 8px; }
+    .btn { font-size: 11px; padding: 8px; }
+  }
+  

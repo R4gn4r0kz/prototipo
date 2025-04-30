@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos Gratis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/juegosgratis.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Juegos Gratis</h1>
+        <ul>
+            {% for juego in juegos %}
+                <li>
+                    <div class="game-details">
+                        <strong>{{ juego.titulo }}</strong>
+                        <span><strong>Género:</strong> {{ juego.genero }}</span>
+                        <span><strong>Plataforma:</strong> {{ juego.plataforma }}</span>
+                        <span class="price"><strong>Precio:</strong> $0</span> <!-- El precio es siempre $0 -->
+                        <span class="descripcion"><strong>Descripción:</strong> {{ juego.descripcion }}</span>
+                        <a href="{{ juego.url }}" class="game-link" target="_blank">Ir al juego</a>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
