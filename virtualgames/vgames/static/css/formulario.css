@@ -1,0 +1,281 @@
+/* Reset y configuracion base */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general del body*/
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #24253C;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: space-between;
+    color: #ffffff;
+    padding: 20px;
+}
+
+/* Estilo título */
+.site-header {
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .site-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 40px;
+    color: #fcbd11;
+}
+  
+/* Contenedor principal */
+  .main-container {
+    flex-grow: 1;
+    width: 100%;
+    max-width: 480px;
+}
+  
+/* Formulario */
+form.formulario {
+    background-color: #24253C;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    gap: 20px;
+  }
+  form h2 {
+    font-size: 26px;
+    color: #fcbd11;
+    margin-bottom: 30px;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+}
+  
+/* Grupo de campos del formulario */
+.form-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+  
+/* Inputs */
+  input {
+    font-family: 'VT323', monospace;
+    padding: 15px;
+    border-radius: 25px;
+    background-color: #24253C;
+    border: 2px solid #FFFFFF;
+    color: #ffffff;
+    font-size: 30px;
+    outline: none;
+  }
+  ::placeholder {
+    color: #ffffff;
+    font-family: 'VT323', monospace;
+    font-size: 25px;
+}
+  
+/* Etiquetas ocultas accesibles */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+  
+/* Errores */
+.error {
+    color: #ff6b6b;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+/* Botones continuar y limpiar */
+.botones {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  .btn {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: transparent;
+    border-radius: 25px;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+  }
+  .btn:hover {
+    background-color: #3fedf3;
+    border-color: #5db8bb;
+}
+
+/* Textos auxiliares */
+.textos-auxiliares {
+    margin-top: 30px;
+  }
+  .textos-auxiliares a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px; 
+    display: inline-block;
+    margin: 8px 0;
+    font-family: 'Share Tech Mono', monospace;
+    transition: color 0.3s ease;
+  }
+  .textos-auxiliares a:hover {
+    color: #fcbd11;
+    text-decoration: underline;
+  }
+  .text-center {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .text-center a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+/* Etiqueta para fecha de nacimiento */
+label[for="fechaNacimiento"] {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 16px;            
+    color: white;               
+    display: block;               
+    margin-bottom: 0px;            
+  }
+
+/* Diseño términos y condiciones */
+.terminos {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 14px;
+    color: white;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+  
+/* Fondo animado */
+.dvd-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+  }
+  .dvd-logo {
+    position: absolute;
+    width: 100px;
+    top: 0;
+    left: 0;
+}
+  
+/* Estilo del pie de página */
+footer {
+    background-color: #11111100;
+    color:white;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Share Tech Mono', monospace;
+    padding: 10px;
+    border-top: 1px solid #33333300;
+    margin-top: 30px;
+}
+  
+/* Ajuste responsivo */
+@media (max-width: 768px) {
+    form.formulario {
+      padding: 30px 20px;
+    }
+  
+    .btn {
+      font-size: 12px;
+      padding: 12px;
+    }
+  
+    input {
+      padding: 14px;
+      font-size: 14px;
+    }
+  
+    form h2 {
+      font-size: 22px;
+    }
+  
+    .site-title {
+      font-size: 18px;
+    }
+  }
+  @media (max-width: 480px) {
+    .btn {
+      font-size: 11px;
+      padding: 10px;
+    }
+  
+    input {
+      padding: 12px;
+      font-size: 13px;
+    }
+  
+    form h2 {
+      font-size: 20px;
+    }
+}
+
+/*Diseño para la seleción del rol */
+.select-container {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+
+.select-container {
+  width: 100%;
+  margin: 15px 0;
+  position: relative;
+}
+
+
+.select-container label {
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+
+.select-container select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+  transition: 0.3s ease;
+  appearance: none; 
+  position: relative;
+}

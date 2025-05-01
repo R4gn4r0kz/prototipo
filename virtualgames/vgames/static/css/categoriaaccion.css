@@ -1,0 +1,159 @@
+/* Estilo general del body */
+body {
+    background-color: transparent;
+    background-image: url("../imagenes/fondocategorias.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+/* Estilo imágenes */
+img {
+    max-width: 100%;
+    height: 300px;
+    display: block;            
+    margin: 0 auto;   
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+/* Estilo de los juegos */
+.game-item {
+    text-align: center; 
+    margin-bottom: 30px;
+}
+
+/* Estilo del botón volver */
+.back {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+    background-color: transparent;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid white; 
+ }
+ .back:hover {
+    background-color: #D6e9FD;
+    color: black;
+    border-color: #D6e9FD;
+}
+
+/* Estilo del botón jugar */
+.btn-ir {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 16px;
+    background-color: transparent;
+    color: #00f7ff;
+    text-decoration: none;
+    border: 2px solid #00f7ff;
+    border-radius: 5px;
+    font-family: 'Audiowide', sans-serif;
+    font-size: 14px;
+    text-shadow: 0 0 5px #00f7ff, 0 0 10px #00f7ff;
+    transition: all 0.3s ease;
+ }
+ .btn-ir:hover {
+    background-color: #00f7ff;
+    color: black;
+    text-shadow: none;
+}
+  
+/* Estilo del título principal */
+h1 {
+    font-family: 'Press Start 2P', monospace;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    animation: neonGlow 1.5s infinite alternate;
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #963fd0,
+      0 0 20px #963fd0,
+      0 0 40px #963fd0;
+}
+
+/* Estilo brillante neón del título principal */
+@keyframes neonGlow {
+    0% {
+      text-shadow:
+        0 0 2px #fff,
+        0 0 4px #963fd0,
+        0 0 8px #963fd0,
+        0 0 16px #963fd0;
+    }
+    100% {
+      text-shadow:
+        0 0 5px #fff,
+        0 0 10px #963fd0,
+        0 0 20px #963fd0,
+        0 0 40px #963fd0;
+    }
+}
+
+/* Estilo del precio */
+.categoria-accion .price {
+    color: #c8ff00;
+    font-weight: bold;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 16px;
+}
+  
+/* Estilo del nombre del juego */
+.categoria-accion .game-item p:not(.price) {
+    color: #c8ff00;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 18px;
+}
+
+/* Contedor botón iniciar sesión */
+.accesos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Estilo del contedor botón iniciar sesión */
+.accesos button {
+    background-color: #5e29ef95;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: 'VT323', monospace;
+    font-size: 18px;
+    font-weight: bold;
+ }
+ .accesos button:hover {
+    background-color: #8b64f5;
+}
+  
+/* Estilo del pie de página */
+footer {
+    background-color: transparent;
+    color:white;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Share Tech Mono', monospace;
+    padding: 10px;
+    border-top: 1px solid transparent;
+    margin-top: 30px;
+  }
+  
+  
+  
